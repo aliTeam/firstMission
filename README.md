@@ -1,2 +1,6 @@
 # firstMission
-Page Layout
+页面布局：实现你所知的页面<br>
+要求：<br>
+1.兼容所有浏览器（未满足的标示出所兼容的浏览器）<br>
+2.使用less,代码要组织和结构性强<br>
+3.html语义化要强<br>
