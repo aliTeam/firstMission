@@ -3,8 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Float Layout</title>
-	<link rel="stylesheet/less" href="basicFloat.less">
-	<script src="../../js/less.min.js"></script>
+	<link rel="stylesheet" href="basicFloat.css">
 </head>
 <body>
 	<!-- 容器 -->
@@ -14,7 +13,7 @@
 			<h1>Header</h1>
 		</div>
 		<!-- 内容区域 两列布局 -->
-		<div id="content" style="dispaly:block">
+		<div id="content">
 			<!-- 主要内容 -->
 			<div class="primary">
 				<p>基于浮动的内容区域常常分为两列布局或三列布局<br />点击按钮进行切换：
@@ -46,12 +45,12 @@
 			content2 = document.getElementById('content2');
 		// 按钮切换事件
 		function change() {
-			if(content.style.display === 'block') {
-				content.style.display = 'none';
-				content2.style.display = 'block';
-			} else {
-				content2.style.display = 'none';
+			if(content.style.display === 'none') {
 				content.style.display = 'block';
+				content2.style.display = 'none';
+			} else {
+				content2.style.display = 'block';
+				content.style.display = 'none';
 			}
 		}
 	</script>
