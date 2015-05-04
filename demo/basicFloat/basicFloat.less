@@ -1,0 +1,35 @@
+@import "../base/base.less";
+// content内容的高度
+@h:600px;
+// 容器属性-宽、高、背景颜色
+.box(@w,@bg){
+	width: @w;
+	height: @h;
+	background-color: @bg;
+}
+// 二列布局
+#content{
+	.box(100%,#666);
+	line-height: 30px;
+	.primary{
+		.box(760px,red);
+		.fr();
+	}
+	.secondary{
+		.box(200px,yellow);
+		.fl();
+	}
+}
+// 三列布局
+#content2{
+	#content();
+	.primary_left{
+		.box(500px,blue);
+		.fl();
+	}
+	.primary_right{
+		.box(260px,green);
+		.fr();
+	}
+
+}
