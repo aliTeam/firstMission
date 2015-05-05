@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalae=nblo">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<meta name="format-detection" content="telephone=yes"/>
+<meta name="msapplication-tap-highlight" content="no" />
+<title>响应式布局</title>
+<!-- css3-mediaqueries.js for IE less than 9 -->
+<!--[if lt IE 9]>
+    <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+<![endif]-->
+<style>
+	.content{ width:1080px; height:800px; margin:0 auto; background-color:#ccc;}
+	.remind{
+		color: red;
+		font-size: 30px;
+	}
+	@media screen and (max-width:1024px){
+	   /*不大于1024px的设备尺寸中 响应式布局的特定样式*/
+		.content{ width: 960px; background-color: red;}
+	}
+</style>
+</head>
+<body>
+	<div class="content">
+		<h1>响应式布局</h1>
+		<h2>概述：</h2>
+		<p>响应式布局是Ethan Marcotte在2010年5月份提出的一个概念，简而言之，就是一个网站能够兼容多个终端——而不是为每个终端做一个特定的版本。这个概念是为解决移动互联网浏览而诞生的。</p>
+		<p>响应式布局可以为不同终端的用户提供更加舒适的界面和更好的用户体验，而且随着目前大屏幕移动设备的普及，用“大势所趋”来形容也不为过。随着越来越多的设计师采用这个技术，我们不仅看到很多的创新，还看到了一些成形的模式。</p>
+		<!-- 优缺点 -->
+		<h2>优点：</h2>
+		<ul>
+			<li>面对不同分辨率设备灵活性强</li>
+			<li>能够快捷解决多设备显示适应问题</li>
+		</ul>
+		<h2>缺点</h2>
+		<ul>
+			<li>兼容各种设备工作量大，效率低下</li>
+			<li>代码累赘，会出现隐藏无用的元素，加载时间加长</li>
+			<li>其实这是一种折中性质的设计解决方案，多方面因素影响而达不到最佳效果</li>
+			<li>一定程度上改变了网站原有的布局结构，会出现用户混淆的情况</li>
+		</ul>
+		<p class="remind">缩小窗口看下效果</p>
+	</div>
+</body>
+
+</html>
