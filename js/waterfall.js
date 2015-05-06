@@ -15,7 +15,7 @@ window.onload=function(){
 							oPic.className='pic';
 							oBox.appendChild(oPic);
 							var oImg=document.createElement('img');
-							oImg.src="../../images/"+picData.data[i].src;
+							oImg.src="images/"+picData.data[i].src;
 							oImg.style.height='auto';
 							oPic.appendChild(oImg);
 							
