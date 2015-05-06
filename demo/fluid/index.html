@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>流式布局</title>
+	<link rel="stylesheet" href="fluid.css">
+</head>
+<body>
+	<!-- 容器 -->
+	<div class="wrapper">
+		<!-- 头部区域 -->
+		<div class="header">
+			<h1>Header</h1>
+		</div>
+		<!-- 内容区域 两列布局 -->
+		<div class="content">
+			<!-- 主要内容 -->
+			<div class="primary">
+				<h2>概述：</h2>
+				<p>在使用流式布局时，尺寸是用百分数而不是像素设置的。这种流式布局能够相对于浏览器窗口进行伸缩。流式布局可以非常高效的使用空间</p>
+				<p>但是，流式布局也有一些问题。在窗口宽度较小的时候，行变得很窄，很难阅读。在多列布局中尤其如此。因此有必要添加以像素或em为单位的min-width。</p>
+			</div>
+			<div class="secondary"></div>
+		</div>
+		<!-- 尾部区域 -->
+		<div class="footer">Footer</div>
+	</div>
+</body>
+</html>
