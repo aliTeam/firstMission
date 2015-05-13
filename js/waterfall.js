@@ -18,6 +18,7 @@ window.onload=function(){
 							oBox.appendChild(oPic);
 							var oImg=document.createElement('img');
 							oImg.src="images/"+picData.data[i].src;
+							oImg.alt="I am a pic"
 							oImg.style.height='auto';
 							oPic.appendChild(oImg);
 							
