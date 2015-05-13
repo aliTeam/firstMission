@@ -1,0 +1,9 @@
+.content{ width:1080px; height:800px; margin:0 auto; background-color:#ccc;}
+.remind{
+	color: red;
+	font-size: 30px;
+}
+@media screen and (max-width:1024px){
+   /*不大于1024px的设备尺寸中 响应式布局的特定样式*/
+	.content{ width: 960px; background-color: red;}
+}

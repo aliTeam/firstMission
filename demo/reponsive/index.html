@@ -1,28 +1,18 @@
 <!doctype html>
 <html>
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalae=nblo">
-<meta name="apple-mobile-web-app-capable" content="yes" />
-<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-<meta name="format-detection" content="telephone=yes"/>
-<meta name="msapplication-tap-highlight" content="no" />
-<title>响应式布局</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+	<meta name="format-detection" content="telephone=yes"/>
+	<meta name="msapplication-tap-highlight" content="no" />
+	<title>响应式布局</title>
 <!-- css3-mediaqueries.js for IE less than 9 -->
 <!--[if lt IE 9]>
     <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
 <![endif]-->
-<style>
-	.content{ width:1080px; height:800px; margin:0 auto; background-color:#ccc;}
-	.remind{
-		color: red;
-		font-size: 30px;
-	}
-	@media screen and (max-width:1024px){
-	   /*不大于1024px的设备尺寸中 响应式布局的特定样式*/
-		.content{ width: 960px; background-color: red;}
-	}
-</style>
+	<link rel="stylesheet" href="reponsive.css">
 </head>
 <body>
 	<div class="content">
