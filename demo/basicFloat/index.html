@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<title>Float Layout</title>
 	<link rel="stylesheet" href="basicFloat.css">
+	<script src="basicFloat.js"></script>
 </head>
 <body>
 	<!-- 容器 -->
@@ -23,7 +24,7 @@
 			<div class="secondary"></div>
 		</div>
 		<!-- 三列布局 -->
-		<div id="content2" style="display:none">
+		<div id="content2">
 			<!-- 主要内容 -->
 			<div class="primary">
 				<div class="primary_left">
@@ -38,21 +39,5 @@
 		<!-- 尾部区域 -->
 		<div class="footer">Footer</div>
 	</div>
-
-	<!-- script: 切换布局 -->
-	<script>
-		var content = document.getElementById('content'),
-			content2 = document.getElementById('content2');
-		// 按钮切换事件
-		function change() {
-			if(content.style.display === 'none') {
-				content.style.display = 'block';
-				content2.style.display = 'none';
-			} else {
-				content2.style.display = 'block';
-				content.style.display = 'none';
-			}
-		}
-	</script>
 </body>
 </html>

@@ -83,6 +83,7 @@ ul {
   height: 600px;
   background-color: #666666;
   line-height: 30px;
+  display: none;
 }
 #content2 .primary {
   width: 760px;
