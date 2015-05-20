@@ -11,25 +11,25 @@
 #content{
 	.box(100%,#666);
 	line-height: 30px;
-	.primary{
-		.box(760px,red);
-		.fr();
-	}
-	.secondary{
-		.box(200px,yellow);
-		.fl();
-	}
+}
+.primary{
+	.fr();
+	.box(760px,red);
+}
+.secondary{
+	.fl();
+	.box(200px,yellow);
 }
 // 三列布局
 #content2{
-	#content();
-	.primary_left{
-		.box(500px,blue);
-		.fl();
-	}
-	.primary_right{
-		.box(260px,green);
-		.fr();
-	}
 	display: none;
+	#content();
+}
+.primary_left{
+	.fl();
+	.box(500px,blue);
+}
+.primary_right{
+	.fr();
+	.box(260px,green);
 }

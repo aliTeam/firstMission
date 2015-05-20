@@ -18,10 +18,6 @@ td {
   padding: 0;
   margin: 0;
 }
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
 ol,
 ul {
   list-style: none;
@@ -41,65 +37,60 @@ ul {
   height: 0;
   clear: both;
 }
-#content {
+.wrapper {
   width: 800px;
   margin: 0 auto;
-  padding: 20px;
+}
+#menu {
+  position: fixed;
+  top: 100px;
+  left: 50%;
+  width: 80px;
+  margin-left: 400px;
+}
+#menu a {
+  display: block;
+  width: 80px;
+  height: 50px;
+  margin: 5px 0;
+  font: 14px/50px bold;
+  color: #333;
+  text-decoration: none;
+  text-align: center;
+}
+#menu a:hover,
+#menu a.current {
+  color: #fff;
+  background: #0088bb;
+}
+* html #menu {
+  position: absolute;
+}
+#content {
+  padding: 20px 0px 20px 0px;
   font-size: 12px;
   line-height: 2em;
 }
 #content h1 {
   color: #0088bb;
 }
-#content .item {
+.item {
   padding: 20px;
   margin-bottom: 20px;
   border: 1px dotted #0088bb;
 }
-#content .item h2 {
-  font-size: 16px;
-  font-weight: bold;
+.item h2 {
+  font: 16px bold;
   border-bottom: 2px solid #0088bb;
   margin-bottom: 10px;
 }
-#content .item li {
+.item li {
   display: inline;
   margin-right: 20px;
 }
-#content .item li img {
+.item img {
   width: 230px;
   height: 230px;
   border: none;
   margin-bottom: 20px;
-}
-#menu {
-  position: fixed;
-  top: 100px;
-  left: 50%;
-  margin-left: 400px;
-  width: 80px;
-}
-#menu ul li a {
-  display: block;
-  margin: 5px 0;
-  font: 14px/50px bold;
-  color: #333;
-  width: 80px;
-  height: 50px;
-  text-decoration: none;
-  text-align: center;
-}
-#menu ul li a:hover,
-#menu ul li a.current {
-  color: #fff;
-  background: #0088bb;
-}
-* html #menu {
-  position: absolute;
-  top: expression(((e=document.documentElement.scrollTop)?e:document.body.scrollTop)+100+'px');
-}
-* html,
-* html body {
-  background-image: url(about:blank);
-  background-attachment: fixed;
 }

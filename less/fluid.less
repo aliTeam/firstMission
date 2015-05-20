@@ -1,32 +1,32 @@
 @import "reset";
-@base_width:70.3%;
+@base_w:70.3%;
+@base_h:600px;
 .header{
 	height: 200px;
 	background: #ccc;
 }
 .wrapper{
-	width: @base_width;
+	width: @base_w;
+	min-width: 500px;// 不支持ie6,7
 	margin: 0 auto;
 	color: #fff;
-	min-width: 500px;// 不支持ie6,7
 }
 .content{
-	@h:600px;
-	height: @h;
-	background-color: #666;
+	height: @base_h;
 	line-height: 30px;
-	.primary{
-		width: 79.1%;
-		height: @h;
-		.fr;
-		background-color: red;
-	}
-	.secondary{
-		width: 20.9%;
-		height: @h;
-		.fl;
-		background-color: yellow;
-	}
+	background-color: #666;
+}
+.primary{
+	.fr;
+	width: 79.1%;
+	height: @base_h;
+	background-color: red;
+}
+.secondary{
+	width: 20.9%;
+	height: @base_h;
+	.fl;
+	background-color: yellow;
 }
 .footer{
 	height: 150px;

@@ -1,49 +1,24 @@
 @import "reset";
-@color:#0088bb;
-#content{
-	width: 800px;
+@color:#08b;
+@main_width:800px;
+.wrapper{
+	width: @main_width;
 	margin: 0 auto;
-	padding: 20px;
-	font-size: 12px;
-	line-height: 2em;
-	h1{
-		color: @color;
-	}
-	.item{
-		padding: 20px;
-		margin-bottom: 20px;
-		border: 1px dotted @color;
-		h2{
-			font-size: 16px;
-			font-weight: bold;
-			border-bottom: 2px solid @color;
-			margin-bottom: 10px;
-		}
-		li{
-			display: inline;
-			margin-right: 20px;
-			img{
-				width: 230px;
-				height: 230px;
-				border: none;
-				margin-bottom: 20px;
-			}
-		}
-	}
 }
+// 导航菜单区域
 #menu{
 	position: fixed;
 	top:100px;
 	left: 50%;
-	margin-left:400px;
 	width: 80px;
-	ul li a{
+	margin-left:@main_width/2;
+	a{
 		display: block;
+		width: 80px;
+		height: 50px;
 		margin: 5px 0;
 		font: 14px/50px bold;
 		color: #333;
-		width: 80px;
-		height: 50px;
 		text-decoration: none;
 		text-align: center;
 		&:hover,&.current{
@@ -54,12 +29,34 @@
 }
 // ie6 hack 不支持fixed属性
 * html #menu{
-	// position:fixed
 	position: absolute;
-	top:~"expression(((e=document.documentElement.scrollTop)?e:document.body.scrollTop)+100+'px')";
 }
-// 帮助相对于窗口固定位置的元素实现无抖动效果
-* html, * html body{
-	background-image: url(about:blank);
-	background-attachment: fixed;
+// content区域
+#content{
+	padding: 20px 0px 20px 0px;
+	font-size: 12px;
+	line-height: 2em;
+	h1{
+		color: @color;
+	}
+}
+.item{
+	padding: 20px;
+	margin-bottom: 20px;
+	border: 1px dotted @color;
+	h2{
+		font: 16px bold;
+		border-bottom: 2px solid @color;
+		margin-bottom: 10px;
+	}
+	li{
+		display: inline;
+		margin-right: 20px;
+	}
+	img{
+		width: 230px;
+		height: 230px;
+		border: none;
+		margin-bottom: 20px;
+	}
 }
