@@ -14,4 +14,10 @@ less:存放less文件，通过koala这种less编译软件将less编译成css放�
 
 js:放置一些通用的js
 
+#成员对应github
+唐德刚 https://github.com/vtangdg
+
+黄婷婷 https://github.com/doublehtt
+
+张恒敏 https://github.com/kamyzd
 
